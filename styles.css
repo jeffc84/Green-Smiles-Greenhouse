@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: hsl(150, 30%, 35%);
+  font-family: "Century Gothic";
+  font-weight: 300;
+  font-size: 18px;
+  color: hsl(150, 0%, 85%);
+}
+
+
+.container-header {
+  width: 100%;
+  margin: 0 auto;
+  position: fixed;
+  box-sizing: border-box;
+  background-color: hsl(100,20%,50%);
+  z-index: 100;
+}
+
+header {
+  background: hsl(150, 30%, 15%);
+}
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+#title-logo {
+  float: left;
+}
+
+nav {
+  float: right;
+  padding-right: 5%;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 50px;
+  padding-top: 45px;
+  position: relative;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#video {
+  align-self: center;
+}
+
+.container {
+  width: 80%;
+  margin: 100px auto 0px auto;
+}
+
+section {
+  float: left;
+  width: 70%;
+  padding: 0px 0px 15px 0px;
+}
+
+aside {
+  float: right;
+  width: 25%;
+  padding: 0px 0px 15px 0px;
+}
+
+footer {
+  clear: both;
+  background-color: hsl(100, 20%, 50%);
+  padding: 15px 50px;
+  text-align: right;
+}
+
+.product-box {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.box {
+  flex: 1 1 300px;
+  background: white;
+  position: relative;
+  overflow: hidden;
+  margin: 20px;
+  border-radius: 10px;
+  max-width: 250px;
+}
+
+.box .image img{
+  height: 200px;
+  width: 250px;
+}
+
+.box .info {
+  padding: 0px 10px;
+  color: hsl(150, 30%, 35%)
+}
+
+@media (max-width: 800px) {
+  .box {
+    flex: 1 1 300px;
+    background: white;
+    position: relative;
+    overflow: hidden;
+    margin: 10px;
+    border-radius: 10px;
+    max-width: 125px;
+  }
+
+  .box .image img{
+    height: 100px;
+    width: 125px;
+  }
+
+  .box .info {
+    padding: 0px 5px;
+    color: hsl(150, 30%, 35%)
+  }
+}
+
+h2 {
+  font-size: 32px;
+}
+
+#video {
+  margin-left: 20px;
+}
